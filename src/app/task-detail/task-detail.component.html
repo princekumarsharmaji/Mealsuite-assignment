@@ -1,0 +1,5 @@
+<div *ngIf="taskDetail$ | async as task">
+    <h1>Task {{task.id}} </h1>
+    <h2>Status {{task.completed}} Assigned To: {{task.assigneeId}}</h2>
+    <p>{{task?.description}}</p>
+</div>

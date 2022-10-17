@@ -1,0 +1,7 @@
+<app-create-task></app-create-task>
+<h1>Tasks</h1>
+<ul>
+  <li *ngFor="let t of tasks$ | async" (click)="goToDetails(t)">
+    Task: {{t.id}}, {{t.description}}
+  </li>
+</ul>
